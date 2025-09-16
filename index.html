@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سفارش سنسی Free Fire</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #0f0f0f, #000);
+      font-family: 'Vazir', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 60px 20px;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #00ffc8;
+      text-shadow: 0 0 15px #00ffc8;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ffc8; }
+      to { text-shadow: 0 0 20px #00ffc8; }
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 0 25px rgba(0,255,200,0.2);
+      animation: popUp 1.5s ease-out forwards;
+    }
+
+    @keyframes popUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    input {
+      padding: 12px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 90%;
+      max-width: 300px;
+      background: #222;
+      color: #fff;
+      font-size: 16px;
+      box-shadow: 0 0 10px #00c896 inset;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: #00c896;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #00c896;
+    }
+
+    button:hover {
+      background: #00ffa2;
+      box-shadow: 0 0 20px #00ffa2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🕹️ فرم سفارش سنسی Free Fire</h1>
+    <form action="https://formsubmit.co/amirali6281387@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="نام شما" required><br>
+      <input type="text" name="phone" placeholder="شماره تماس" required><br>
+
+      <!-- انتقال به پرداخت بعد از ارسال -->
+      <input type="hidden" name="_next" value="https://daramet.com/ZzZstile">
+
+      <!-- جلوگیری از اسپم -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">ثبت و پرداخت</button>
+    </form>
+  </div>
+</body>
+</html>
